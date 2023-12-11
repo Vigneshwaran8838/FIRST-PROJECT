@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ui is inspired by Google images -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page ui </title>
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <H2>Landing Vignesh</H2>
+            <ul id="menu">
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Portfolio
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+            <i onclick="menuu()" class="fa fa-bars" aria-hidden="true"></i>
+        </nav>
+        <div class="row">
+            <div class="con_1">
+                <img src="E:\Landing.png" alt="">
+            </div>
+            <div class="con_2">
+                <h3>Fashion</h3>
+                <h1>
+                    Fashion is part of our culture
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum, cumque enim dolorem maiores nostrum minus distinctio, consequatur itaque, accusantium officia similique aperiam in blanditiis mollitia odio voluptatum. Quod consectetur accusamus quae delectus quibusdam atque ullam fuga sed consequuntur! Cupiditate consequatur itaque atque veniam commodi recusandae a mollitia ratione hic.</p>
+                <p class="link"><a href="#">Read More ></a></p>
+                <h2>Subscribe our newsletter</h2>
+                <div class="email">
+                    <input placeholder="Enter Your Email" type="email" name="" id="">
+                    <h4>Subscribe</h4>
+                </div>
+            </div>
+        </div>
+          <a  class="link2" href="https://youtu.be/HnivFBsom1g">My coding channel</a>
+    </div>
+    <script>
+       let icon=document.querySelector(".fa-bars");
+       
+       let menu=document.getElementById("menu");
+      function menuu(){
+          if(menu.style.height=="0vw"){
+              menu.style.height="90vw";
+              icon.classList.remove("fa-bars");
+              icon.classList.add("fa-times");
+          }else{
+              menu.style.height="0vw";
+              icon.classList.add("fa-bars");
+              icon.classList.remove("fa-times")
+          }
+      }
+       
+    </script>
+</body>
+
+</html> 
